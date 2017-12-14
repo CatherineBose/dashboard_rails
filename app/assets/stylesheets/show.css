@@ -1,0 +1,10 @@
+.container{
+    width: 1000px;
+    /* background-color :#800000; */
+    /* background: linear-gradient(#7A287A,#491D3F,#6B2C63); */
+    background-color: white;
+    margin: 0px auto;
+     height: 1700px;
+     overflow: hidden; 
+     padding: 0px;
+}

@@ -1,0 +1,36 @@
+<% if flash[:success] %>
+<div id="success">
+    <p><%= flash[:success] %></p>
+</div>
+<% end %>
+<% if flash[:errors] %>
+<div id="success">
+    <p><%= flash[:errors] %></p>
+</div>
+<% end %>
+<p>Create a New Dojo branch<p>
+<form action="/dojos" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+<p>
+    <label>Branch:</label>
+    <input type="text" name="dojo[branch]">
+</p>
+<p>
+    <label>Street:</label>
+    <input type="text" name="dojo[street]">
+</p>
+<p>
+    <label>City:</label>
+    <input type="text" name="dojo[city]">
+</p>
+<p>
+    <label>State:</label>
+    <input type="text" name="dojo[state]">
+</p> 
+
+
+<input type="submit" value="Create Dojo">
+</form>
+
+<%= link_to "Back", root_path %>
